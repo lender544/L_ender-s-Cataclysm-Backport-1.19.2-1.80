@@ -1,0 +1,27 @@
+{
+  "required": true,
+  "package": "com.github.L_Ender.cataclysm.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "target": "@env(DEFAULT)",
+  "refmap": "cataclysm.refmap.json",
+  "mixins": [
+    "ItemMixin",
+    "LivingEntityMixin",
+    "MultifaceGrowthFeatureMixin",
+    "NoBasaltColumnsInStructuresMixin",
+    "NoDeltasInStructuresMixin",
+    "NoGeodeInStructuresMixin",
+    "NoLakesInStructuresMixin",
+    "NoOreInStructuresMixin",
+    "StructureProcessorAccessor",
+    "StructureTemplateMixin",
+    "WorldGenRegionAccessor",
+    "BrushItemMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "minVersion": "0.8"
+}
