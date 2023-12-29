@@ -46,7 +46,7 @@ repositories{
 
 }
 
-version = '1.84 -1.19.2'
+version = '1.86 -1.19.2'
 group = 'com.github.L_Ender' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'L_Enders_Cataclysm'
 
@@ -152,7 +152,7 @@ tasks.named('jar', Jar).configure {
         attributes([
                 "Specification-Title": "cataclysm",
                 "Specification-Vendor": "L_Ender",
-                "Specification-Version": "1.0", // We are version 1 of ourselves
+                "Specification-Version": "1.86", // We are version 1 of ourselves
                 "Implementation-Title": project.name,
                 "Implementation-Version": "${version}",
                 "Implementation-Vendor" :"L_Ender",

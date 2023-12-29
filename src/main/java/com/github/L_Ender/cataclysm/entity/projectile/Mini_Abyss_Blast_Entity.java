@@ -128,7 +128,7 @@ public class Mini_Abyss_Blast_Entity extends Entity {
                 for (LivingEntity target : hit) {
                     if (caster != null) {
                         if (!this.caster.isAlliedTo(target) && target != caster) {
-                            target.hurt(CMDamageTypes.causeLaserDamage(this, caster).bypassArmor(), 3);
+                            target.hurt(CMDamageTypes.causeLaserDamage(this, caster).bypassArmor(), 5);
                         }
                     }
 
