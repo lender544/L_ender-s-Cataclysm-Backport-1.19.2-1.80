@@ -521,6 +521,8 @@ public class Ignis_Entity extends Boss_monster {
     public LivingEntity getHeldEntity() {
         if (!this.getheldEntity()) {
             return null;
+        } else if (this.getAnimation() != POKED_ATTACK){
+            return null;
         } else {
             return (LivingEntity) this.level.getEntity(this.entityData.get(HELD_ENTITY));
         }

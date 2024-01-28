@@ -53,7 +53,7 @@ public class HoldAttackCapability {
         @Override
         public void tick(LivingEntity entity) {
             if (getHold()) {
-                if (holder != null) {
+                if (holder != null && holder.isAlive()) {
                     // Actually throw the victim
                     if (this.target instanceof Player) {
                         this.target.setPos(this.PosVector.x(), this.PosVector.y(), this.PosVector.z());

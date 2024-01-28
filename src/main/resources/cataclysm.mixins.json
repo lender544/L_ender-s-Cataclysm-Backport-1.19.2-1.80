@@ -13,7 +13,9 @@
     "NoGeodeInStructuresMixin",
     "NoLakesInStructuresMixin",
     "NoMagmaBlockInStructuresMixin",
+    "NoMultifaceGrowthFeatureInStructuresMixin",
     "NoOreInStructuresMixin",
+    "StructureManagerAccessor",
     "StructureProcessorAccessor",
     "StructureTemplateMixin",
     "WorldGenRegionAccessor"

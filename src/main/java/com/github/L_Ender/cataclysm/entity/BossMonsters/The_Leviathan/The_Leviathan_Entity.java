@@ -1250,6 +1250,8 @@ public class The_Leviathan_Entity extends Boss_monster implements ISemiAquatic {
     public LivingEntity getHeldEntity() {
         if (!this.hasLiftedEntity()) {
             return null;
+        } else if (this.getAnimation() != LEVIATHAN_TENTACLE_HOLD_BLAST){
+            return null;
         } else {
             return (LivingEntity) this.level.getEntity(this.entityData.get(HELD_ENTITY));
         }
