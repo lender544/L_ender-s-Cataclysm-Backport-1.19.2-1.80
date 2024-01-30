@@ -1596,10 +1596,6 @@ public class Ignis_Entity extends Boss_monster {
             this.yBodyRot = this.getYRot();
             this.yHeadRot = this.getYRot();
 
-            if (this.getAnimationTick() == 46) {
-                this.setheldEntity(0);
-                //passenger.push(f1 * 2.5, 0.8, f2 * 2.5);
-            }
             Vec3 HoldVec = new Vec3( this.getX() + extraX, this.getY() + extraY + 1.2F, this.getZ() + extraZ);
 
             lifted.getCapability(ModCapabilities.HOLD_ATTACK_CAPABILITY).ifPresent(cap -> {
